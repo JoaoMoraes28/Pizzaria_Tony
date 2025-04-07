@@ -12,3 +12,25 @@ a {
 ul,ol,li {
     list-style: none;
 }
+
+body {
+    padding: 0px 80px;
+}
+
+header {
+    position: fixed;
+    width: calc(100% - 160px);
+    height: 60px;
+    top: 60px;
+    background-color: lightblue;
+}
+
+main {
+    height: 700px; /* Temporário */
+    background-color: tomato;
+}
+
+footer {
+    height: 526px;
+    background-color: pink;
+}
