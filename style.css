@@ -13,24 +13,67 @@ ul,ol,li {
     list-style: none;
 }
 
+:root {
+    --primary-color: #F07807;
+    --secundary-color: #FBDDC1;
+    --default-shadow: 0 4px 4px #0004
+ 
+}
+
 body {
     padding: 0px 80px;
+    font-family: "Poppins", sans-serif;
 }
 
 header {
     position: fixed;
     width: calc(100% - 160px);
+    display: flex;
+    justify-content: space-between;
     height: 60px;
     top: 60px;
-    background-color: lightblue;
+    align-items: center;
+}
+
+header menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 48px;
+}
+
+header li {
+    padding: 1px 12px;
+    transition: 0.5s;
+}
+
+header li:hover {
+    background-color: var(--secundary-color);
+    box-shadow: var(--default-shadow);
 }
 
 main {
     height: 700px; /* Temporário */
-    background-color: tomato;
+    background-color: lightblue;
 }
 
 footer {
     height: 526px;
     background-color: pink;
+}
+
+header button {
+    height: 48px;
+    width: 120px;
+    background-color: var(--secundary-color);
+    border-radius: 12px;
+    border: none;
+    box-shadow: var(--default-shadow);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    font-weight: 800;
+    color: var(--primary-color);
+    
 }
