@@ -20,6 +20,10 @@ ul,ol,li {
     --default-padding: 0px 80px;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: "Poppins", sans-serif;
     background-color: var(--secundary-color) ;
@@ -35,11 +39,12 @@ header {
     align-items: center;
     padding: var(--default-padding);
     z-index: 99;
+    background-color: #fff5;
 }
 
 .pi {
     width: 32vw;
-    height: 36vh;
+    height: 41vh;
 }
 
 .hero {
