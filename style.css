@@ -408,3 +408,115 @@ header button {
     color: var(--primary-color);
     
 }
+
+@media (max-width: 1024px) {
+
+    header {
+        position: absolute;
+        background-color: transparent;
+        left: 0;
+        top: 48px;
+    }
+
+    header menu {
+        position: fixed;
+        height: 64px;
+        width: 100vw;
+        left: 0;
+        bottom: 0;
+        background-color: var(--primary-color);
+        z-index: 99;
+        font-size: 25px;
+        justify-content: space-evenly;
+        pointer-events: none;
+    }
+
+    header li:hover {
+        color: var(--primary-color);
+    }
+
+    .home {
+        grid-template-rows: none;
+    }
+
+    .home .container-produtos {
+        display: none;
+    }
+
+    .hero {
+        flex-direction: column-reverse;
+        gap: 0;
+        justify-content: end;
+        align-items: center;
+        padding-bottom: 64px;
+    }
+
+    .pi {
+        width: 500px;
+    }
+
+    .container-produtos .pizza:nth-child(3),
+    .container-produtos .pizza:nth-child(4)
+    {
+        display: none;
+    }
+
+    .container-produtos .pizza {
+        width: 100%;
+    }
+
+    .container-produtos img {
+        width: 100%;
+    }
+
+    .cardapio {
+        justify-content: center;
+        gap: 30px;
+    }
+
+    .container-produtos .pizza.bebida:nth-last-child(1) {
+        display: none;
+    }
+
+    .pizza.bebida {
+        width: auto;
+    }
+
+    .opcoes-servicos {
+        flex-direction: column;
+    }
+
+    .servico-card {
+        width: 100%;
+        height: 260px;
+        flex-wrap: wrap;
+    }
+
+    .servico-card p {
+        width: 60%;
+    }
+    
+    .contatos-item:nth-child(2)
+    {
+        display: none;
+    }
+
+    .contatos-item {
+        padding: 0;
+    }
+
+    .contatos-container {
+        height: 400px;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .contatos-item.social {
+        align-items: end;
+    }
+
+    .creditos {
+        margin-bottom: 64px;
+    }
+}    
