@@ -47,6 +47,10 @@ header {
     height: 41vh;
 }
 
+.mobile {
+    display: none;
+}
+
 .hero {
     flex-grow: 3;
     display: flex;
@@ -519,4 +523,31 @@ header button {
     .creditos {
         margin-bottom: 64px;
     }
+
+    @media (max-width: 390px) {
+        
+        .home {
+            background-image: url(./img/mobile.jpg);
+            background-size: cover;
+            
+            
+        }
+
+        .hero img {
+            display: none;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+        }
+    
+        .hero h2 {
+            font-size: 30px;
+            width: 290px;
+        }
+    
+        header {
+            gap: 50px;
+        }
+    }
+
 }    
